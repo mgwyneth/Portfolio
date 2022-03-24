@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Gwyneth Baluyot</title>
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <!-- Bootstrap Js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <!-- Google Fonts (Roboto & Montserrat)-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@100;400;700&display=swap" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/fontawesome.css"/> 
+    <script>
+        $(document).ready(function () {
+            //for active
+            $('.navbar .navbar-nav a').on('click', function () {
+                $('.navbar .navbar-nav').find('li.active').removeClass('active');
+                $(this).parent(' li ').addClass('active');
+            });
+            // for active scroll
+        });
+    </script>
+</head>
+
+<body id="top-page">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow p-1 mb-5 bg-white" id="navBar">
+        <div class="container">
+            <a class="navbar-brand" href="#top-page">
+                <b>Gwyneth Baluyot /</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav text-uppercase ml-auto justify-content-end">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#background">Background</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead -->
+    <header class="masthead">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-xs-12 col-s-10 col-md-6 col-lg-5 text-center">
+                    <div class="masthead-heading">Ma. Gwyneth Baluyot</div>
+                    <div class="masthead-subheading text-uppercase">
+                        Front-End Developer
+                    </div>
+                    <a class="btn btn-outline-secondary btn-xl text-uppercase" href="#about">Find Out More</a>
+                </div>
+                <div class="col-xs-12 col-s-10 col-md-6 col-lg-5 m-5">
+                    <img class="rounded-circle img-fluid" src="assets/profile.JPG" alt="profile pic" />
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- About -->
+    <section class="page-section bg-grey" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">About Me</h2>
+                <h3 class="section-subheading text-muted">Here's who I am & what I do</h3>
+                <h2 class="about-heading">Hi, there!</h2>
+                <h4 class="my-3 p-3 text-justify">
+                    I'm currently a college student studying BS Computer Science and I'm residing here in the PH. 
+                    I am a highly motivated <em>full-stack computer science student </em>looking to pursue a 
+                    successful career in software development. Interested in the fields of <em>Artificial 
+                        Intelligence, Computational Science, and Graphics and Visual Computing.</em>
+                    Experience includes designing, developing, and testing a wide variety of 
+                    software.
+                </h4>
+            </div>
+            <div class="row text-center mt-4">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-business-time fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Soft Skills</h4>
+                    <p class="text-muted">
+                        Excellent time management and organizational skills
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-code fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Developer</h4>
+                    <p class="text-muted">
+                        C/C++, C#, Java, Python, JavaScript, HTML, CSS
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-pencil-paintbrush fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Designer</h4>
+                    <p class="text-muted">
+                        Exceptional creativity and innovation, especially using
+                        phot-editing softwares.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Background -->
+    <section class="page-section" id="background">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Background</h2>
+                <h3 class="section-subheading text-muted">
+                    Education and Achievements
+                </h3>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image">
+                        <img class="rounded-circle img-fluid" src="assets/background/tup.png" alt="TUP logo" />
+                    </div>
+                    <div class="timeline-panel shadow">
+                        <div class="timeline-heading">
+                            <h4>2018-Present</h4>
+                            <h4 class="subheading">
+                                Technological University of the Philippines - Manila Campus
+                            </h4>
+                        </div>
+                        <div class="timeline-body text-muted">
+                            <p>
+                                Bachelor of Science in Computer Science <br />
+                                <i>GPA: 1.5</i>
+                            <ul>
+                                <li>Dean's Lister</li>
+                                <li>Member of Computer Students' Association (COMPASS)</li>
+                                <li>Member of Robotics</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <img class="rounded-circle img-fluid" src="assets/background/talon.png" alt="Talon logo" />
+                    </div>
+                    <div class="timeline-panel shadow">
+                        <div class="timeline-heading">
+                            <h4>2016-2018</h4>
+                            <h4 class="subheading">
+                                Las Piñas City National Senior High School - Talon Campus
+                            </h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">
+                                Academic Track - Science, Technology, Engineering, and Mathematics (STEM) Strand <br />
+                                <i>GPA: 92.0</i>
+                            <ul>
+                                <li>Graduated with Honors </li>
+                                <li>Supreme Student Government Treasurer</li>
+                                <li>Academic Excellence</li>
+                                <li>Leadership Award</li>
+                                <li>Award for Outstanding Performance in Media Arts </li>
+                                <li>Award for Outstanding Performance in Mathematics</li>
+                                <li>Participated in AutoCAD Contest</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image">
+                        <img class="rounded-circle img-fluid" src="assets/background/sja.png" alt="SJA logo" />
+                    </div>
+                    <div class="timeline-panel shadow">
+                        <div class="timeline-heading">
+                            <h4>2012-2016</h4>
+                            <h4 class="subheading">St. Joseph's Academy</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">
+                                <i>GPA: 89.0</i>
+                            <ul>
+                                <li>Outstanding student</li>
+                                <li>Member of Visual Arts Group</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Projects -->
+    <section class="page-section bg-grey" id="projects">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Projects</h2>
+                <h3 class="section-subheading text-muted">School Projects</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Project 1-->
+                    <div class="project-container">
+                        <a class="project-link" data-bs-toggle="modal" href="#project1">
+                            <img src="assets/projects/homeWeather.png" alt="Avatar" class="image">
+                            <div class="project-overlay">
+                                <div class="project-content">
+                                    <h4 class="content">Weather Prediction System using Python</h4>
+                                    <a class="btn btn-outline text-uppercase px-4" href="#">View Project ></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-caption">
+                            <div class="project-caption-heading">HomeWeather</div>
+                            <div class="project-caption-subheading text-muted">
+                                Python
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Project 2-->
+                    <div class="project-container">
+                        <a class="project-link" data-bs-toggle="modal" href="#project2">
+                            <img src="assets/projects/addmoko.jpg" alt="Avatar" class="image">
+                            <div class="project-overlay">
+                                <div class="project-content">
+                                    <div class="content">Social Networking Site using Java</div>
+                                    <a class="btn btn-outline text-uppercase px-4" href="#">View Project ></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-caption">
+                            <div class="project-caption-heading">Addmoko</div>
+                            <div class="project-caption-subheading text-muted">Java</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Project 3-->
+                    <div class="project-container">
+                        <a class="project-link" data-bs-toggle="modal" href="#project3">
+                            <img src="assets/projects/swappit.png" alt="Avatar" class="image">
+                            <div class="project-overlay">
+                                <div class="project-content">
+                                    <div class="content">Barter Exchange Application using JavaScript</div>
+                                    <a class="btn btn-outline text-uppercase px-4" href="#">View Project ></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-caption">
+                            <div class="project-caption-heading">SWAPPIT</div>
+                            <div class="project-caption-subheading text-muted">JavaScript</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- Project 4-->
+                    <div class="project-container">
+                        <a class="project-link" data-bs-toggle="modal" href="#project4">
+                            <img src="assets/projects/memoryLane.jpg" alt="Avatar" class="image">
+                            <div class="project-overlay">
+                                <div class="project-content">
+                                    <div class="content">Personal Photography Website using HTML & CSS</div>
+                                    <a class="btn btn-outline text-uppercase px-4" href="#">View Project ></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-caption">
+                            <div class="project-caption-heading">MemoryLane</div>
+                            <div class="project-caption-subheading text-muted">HTML & CSS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <!-- Project 5-->
+                    <div class="project-container">
+                        <a class="project-link" data-bs-toggle="modal" href="#project5">
+                            <img src="assets/projects/agimat.jpg" alt="Avatar" class="image">
+                            <div class="project-overlay">
+                                <div class="project-content">
+                                    <div class="content">A Game inspired by Filipino Folklore using Java</div>
+                                    <a class="btn btn-outline text-uppercase px-4" href="#">View Project ></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-caption">
+                            <div class="project-caption-heading">Agimat</div>
+                            <div class="project-caption-subheading text-muted">Java</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <!-- Project 6-->
+                    <div class="project-container">
+                        <a class="project-link" data-bs-toggle="modal" href="#project6">
+                            <img src="assets/projects/blackbird.png" alt="Avatar" class="image">
+                            <div class="project-overlay">
+                                <div class="project-content">
+                                    <div class="content">Logo for Food Business using Adobe Illustrator</div>
+                                    <a class="btn btn-outline text-uppercase px-4" href="#">View Project ></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-caption">
+                            <div class="project-caption-heading">BlackBird</div>
+                            <div class="project-caption-subheading text-muted">Adobe Illustrator</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">
+                    Copyright &copy; Gwyneth Baluyot / Portfolio 2022
+                </div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-social mx-2" href="https://www.instagram.com/mauibaluyot/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="btn btn-social mx-2" href="https://www.facebook.com/maui.baluyot" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-social mx-2" href="https://www.linkedin.com/in/magwynethbaluyot/"
+                        target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-social mx-2" href="https://github.com/mgwyneth" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    GMAIL: m.gwynethbaluyot@gmail.com <br />SKYPE: Gwyneth Baluyot
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
